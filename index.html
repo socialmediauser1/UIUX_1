@@ -1,7 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        th {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <h2>Recreated Table</h2>
+
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+        <tr>
+            <td colspan="2">Cell 4</td>
+        </tr>
+        <tr>
+            <td colspan="3">Cell 7</td>
+        </tr>
+    </table>
+
 </body>
 </html>
