@@ -9,7 +9,6 @@
             font-family: Arial, sans-serif;
         }
         table {
-            width: 50%;
             border-collapse: collapse;
             margin: 20px 0;
         }
@@ -29,29 +28,28 @@
     </style>
 </head>
 <body>
-
-    <h2>Recreated Table</h2>
-
     <table>
         <tr>
             <th>Column 1</th>
-            <th>Column 2</th>
+            <th colspan="2">Column 2</th>
             <th>Column 3</th>
         </tr>
         <tr>
-            <td rowspan="3">Cell 1</td>
+            <td rowspan="4">Cell 1</td>
             <td>Cell 2</td>
             <td>Cell 3</td>
-            <td>Cell 5</td>
-            <td>Cell 6</td>
+            <td rowspan="3">Cell 4</td>
         </tr>
         <tr>
-            <td colspan="2">Cell 4</td>
+
         </tr>
         <tr>
-            <td colspan="2">Cell 7</td>
+            <td colspan="1">Cell 5</td>
+            <td colspan="1">Cell 6</td>
+        </tr>
+        <tr>
+            <td colspan="3">Cell 7</td>
         </tr>
     </table>
-
 </body>
 </html>
